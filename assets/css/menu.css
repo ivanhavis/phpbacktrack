@@ -4,20 +4,29 @@ p {
     color: #61d7b9;
     margin-top: 2%;
 }
+body {
+    background: linear-gradient(to right, #f0f0f0, #ffffff);
+    background: url('../../gambar/blide.gif') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+/* main button */
 button{
   font-family: 'Poppins', sans-serif;
-  border-radius: 25px;
-  background: linear-gradient(to left, #cff695, #61d7b9, #06bed8);
+  border-radius: 10px;
+  background: linear-gradient(to left, #819662);
   color:#fff;
   border:none;
   position:relative;
   height:45px;
   width: auto;
   font-size:20px;
-  padding:0 2em;
+  padding:0 1cm;
   cursor:pointer;
   transition:800ms ease all;
   outline:none;
+  opacity: calc(50%);
 }
 button:hover{
   background:#fff;
@@ -30,7 +39,7 @@ button:before,button:after{
   right:0;
   height:2px;
   width:0;
-  background: linear-gradient(to left, #cff695, #61d7b9, #06bed8);
+  background: linear-gradient(#00927a);
   transition:400ms ease all;
 }
 button:after{
