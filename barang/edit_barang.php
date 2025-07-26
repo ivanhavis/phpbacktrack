@@ -4,7 +4,7 @@ if (empty($_SESSION['username']))
 {
 header("location:index.php");
 }
-include "config/koneksi.php";
+include "../config/koneksi.php";
 $edit = mysqli_query($konek, "SELECT * FROM barang WHERE idbarang = '$_GET[id]'");
 $row = mysqli_fetch_array($edit);
 ?>

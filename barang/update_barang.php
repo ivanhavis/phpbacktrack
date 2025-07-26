@@ -4,7 +4,7 @@ if (empty($_SESSION['username']))
 {
 header("location:index.php");
 }
-include "config/koneksi.php";
+include "../config/koneksi.php";
 $lokasi_file = $_FILES['fupload']['tmp_name'];
 $nama_file = $_FILES['fupload']['name'];
 if(empty($lokasi_file)){

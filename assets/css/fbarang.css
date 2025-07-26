@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    background: #000000;
+    align-items: center;
+}
 h2{
     font-family: 'Poppins', sans-serif;
     color: #000;
@@ -6,7 +10,7 @@ h2{
     font-size: 30px;
 }
 h5{
-    color: #1f6d59; 
+    color: #747474; 
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     margin-top: -20px;
@@ -18,13 +22,16 @@ lottie-player{
 .glass{
     padding-top: 25px;
     padding-bottom: 15px;
-    width: 470px;
-    background: rgba( 0, 152, 121, 0.75 );
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+    width: fit-content;
+    background: rgba(47, 82, 47, 0.75);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 3px );
     -webkit-backdrop-filter: blur( 3px );
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 2px solid rgb(0, 110, 33);
 }
 button{
     font-family: 'Poppins', sans-serif;

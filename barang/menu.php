@@ -12,11 +12,12 @@ header("location:index.php");
 <link rel="stylesheet" href="../assets/css/menu.css">
 </head>
 <body>
-<font size="128px"><b>MENU UTAMA</b></font></p>
+<b>MENU UTAMA</b></p>
 <?php
 echo"<h5>";
 echo $_SESSION['username'];
 ?>
+<div id="xxx1">
 <form method=POST action=form_barang.php>
 <button>Tambah Barang</button>
 </form>
@@ -26,5 +27,6 @@ echo $_SESSION['username'];
 <form method=POST action=logout.php>
 <button>Logout</button>
 </form>
+</div>
 </body>
 </html>
