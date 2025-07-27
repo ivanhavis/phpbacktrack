@@ -4,7 +4,7 @@ if (empty($_SESSION['username']))
 {
 header("location:index.php");
 }
-include "config/koneksi.php";
+include "../config/koneksi.php";
 $id = $_GET['id'];
 if (hapus($id)) {
 ?>

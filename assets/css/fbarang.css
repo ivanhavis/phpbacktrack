@@ -2,6 +2,8 @@
 body{
     background: #000000;
     align-items: center;
+    background-image: url('../assets/gambar/BGX3.png');
+    background-size: cover;
 }
 h2{
     font-family: 'Poppins', sans-serif;
@@ -12,7 +14,7 @@ h2{
 h5{
     color: #747474; 
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    font-size: 30px;
     margin-top: -20px;
 }
 lottie-player{
@@ -26,12 +28,12 @@ lottie-player{
     padding-right: 10px;
     margin: 0 auto;
     width: fit-content;
-    background: rgba(47, 82, 47, 0.75);
+    background: rgba(69, 11, 75, 0.75);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 3px );
     -webkit-backdrop-filter: blur( 3px );
     border-radius: 10px;
-    border: 2px solid rgb(0, 110, 33);
+    border: 0px solid rgb(100, 15, 22);
 }
 button{
     font-family: 'Poppins', sans-serif;
@@ -50,7 +52,7 @@ button{
     margin: 0px 10px;
 }
 button:hover{
-    background:#2ed691;
+    background:#520036;
     color:#fff;
     border-radius: 0px;
 }
@@ -61,7 +63,7 @@ button:before,button:after{
     right:0;
     height:2px;
     width:0;
-    background: #f4ff5e;
+    background: #770081;
     transition:400ms ease all;
 }
 button:after{
@@ -78,7 +80,7 @@ form table{
     font-family: 'Poppins', sans-serif;
     padding: 15px;
     background: rgba( 255, 255, 255, 0.75 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    box-shadow: 0 0px 0px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 11px );
     -webkit-backdrop-filter: blur( 11px );
     border-radius: 10px;
@@ -103,7 +105,7 @@ form table{
     margin-top: 15px;
 }
 #simpan:hover{
-    background:#2ed691;
-    color:#fff;
+    background:#7c0061;
+    color:#ffffff;
     border-radius: 0px;
 }

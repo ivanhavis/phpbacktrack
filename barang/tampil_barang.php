@@ -6,7 +6,6 @@ header("location:index.php");
 }
 require '../config/koneksi.php';
 $barang = query("SELECT * FROM barang");
-// Kolom pencarian terisi
 if(isset($_POST["cari"])){
 $barang = cari($_POST["keyword"]);
 }
@@ -16,10 +15,11 @@ $barang = cari($_POST["keyword"]);
 <title>Inventory Gudang</title>
 <link rel="stylesheet" href="../assets/css/tbarang.css">
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 </head>
 <body>
-<h2 align=center>DAFTAR BARANG</h2>
+<h2 align=center>CAR</h2>
 <center>
 <table>
 <form method=POST action=form_barang.php>
@@ -52,12 +52,12 @@ $barang = cari($_POST["keyword"]);
 <?php foreach($barang as $row){ ?>
 <tr class="isi">
 <td align=center><?= $i; ?></td>
-<td align=left><?= $row["namabrg"] ?></td>
-<td align=left><?= $row["brand"] ?></td>
-<td align=left><?= $row["kategori"] ?></td>
+<td align=center><?= $row["namabrg"] ?></td>
+<td align=center><?= $row["brand"] ?></td>
+<td align=center><?= $row["kategori"] ?></td>
 <td align=center><?= $row["jumlah"] ?></td>
-<td align=left>Rp. <?= $row["harga"] ?></td>
-<td align=center><img src=gambar/<?= $row["gambar"]; ?> width="70" height="70"></td>
+<td align=center>Rp. <?= $row["harga"] ?></td>
+<td align=center><img src="../gambar/<?= htmlspecialchars($row["gambar"]); ?>" width="70" height="70"></td>
 <td align=center><a style="text-decoration: none" href=edit_barang.php?id=<?php echo $row['idbarang']; ?>>Edit</a>
 <br><br>
 <a style="text-decoration: none" href="hapus_barang.php?id=<?php echo $row['idbarang']; ?>" onclick="return confirm('yakin ingin meghapus data ini ? )">Hapus</a>

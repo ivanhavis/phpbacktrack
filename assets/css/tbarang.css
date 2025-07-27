@@ -1,13 +1,23 @@
+body {
+    font-family: 'Poppins', sans-serif;
+   background-image: url('../konterku/gambar/BGX2.jpg'); /* Path to your background image */
+    background-size: cover; /* Make the image cover the entire body */
+    background-position: center center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; 
+    background-color: #141414;
+    color: #ffffff;
+}
 .styled-table {
     border-collapse: collapse;
-    margin: 25px 0;
+    margin: 10px 0;
     font-size: 0.9em;
-    font-family: sans-serif;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    font-family: sans-serif, 'Poppins',;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .styled-table .judul{
-    background-color: #009879;
+    background-color: #470050;
     color: #ffffff;
     text-align: left;
 }
@@ -15,7 +25,8 @@
     padding: 15px;
 }
 .styled-table .isi td {
-    padding: 15px 10px;
+    padding: 25px 30px;
+    /*background-color: #5f006b;*/
 }
 
 .styled-table tr {
@@ -23,14 +34,14 @@
 }
 
 .styled-table tr:last-of-type {
-    border-bottom: 5px solid #009879;
+    border-bottom: 5px solid #460031;
 }
 
-/* Button */
+
 button{
     font-family: 'Poppins', sans-serif;
     border-radius: 25px;
-    background: #009879;
+    background: #470050;
     color:#fff;
     border:none;
     position:relative;
@@ -54,7 +65,7 @@ button:before,button:after{
     right:0;
     height:2px;
     width:0;
-    background: #009879;
+    background: #460031;
     transition:400ms ease all;
   }
 button:after{
@@ -74,7 +85,7 @@ button:hover:before,button:hover:after{
   }
 
 #keyword{
-    border: 3px solid #009879;
+    border: 3px solid #460031;
     padding: 6px 15px;
     outline: none;
     border-radius: 15px;
@@ -82,7 +93,9 @@ button:hover:before,button:hover:after{
   }
 h2 {
     font-family: 'Poppins', sans-serif;
-    color: #1f6d59;
+    color: #7e14d4;
     margin-top: 25px;
     font-size: 35px;
+}
+td {
 }

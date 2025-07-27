@@ -14,9 +14,18 @@ if (empty($_SESSION['username'])) {
     <h2 align="center">INPUT DATA BARANG</h2>
     <h5><?= $_SESSION['username']; ?></h5>
 
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script
+  src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js"
+  type="module"
+></script>
     <lottie-player src="https://assets10.lottiefiles.com/packages/1f20_7k8jk8vi.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
-
+<dotlottie-wc
+  src="https://lottie.host/20560b1b-2a09-4dce-9613-3294bde7c386/lSk2QQyXoI.lottie"
+  style="width: 300px;height: 300px"
+  speed="1"
+  autoplay
+  loop
+></dotlottie-wc>
     <div class="glass">
         <form method="POST" action="input_barang.php" enctype="multipart/form-data">
             <table>

@@ -4,6 +4,7 @@ body {
   font-family: var(--body-font);
   background: url('../../gambar/Lam.png') no-repeat center center;
   background-size: cover;
+  padding-right: 300px ;
   height: 100vh;
   display: flex;
   justify-content: flex-start;
@@ -126,7 +127,7 @@ body {
 :root {
   body-font: 'Arial', sans-serif;
   text-color: #ffffff;
-  first-color: #40e0d0; /* turquoise */
+  first-color: #40e0d0; 
 }
 
 #login {
