@@ -1,10 +1,9 @@
 <?php
 session_start();
-// Cek Login
 if (empty($_SESSION['username']))
 {
     header("location:index.php");
-    exit(); // Always exit after a header redirect
+    exit(); 
 }
 ?>
 <!DOCTYPE html>
